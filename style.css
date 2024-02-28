@@ -1,0 +1,100 @@
+html {
+  font-size: 16px;
+}
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Red Hat Display";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+main {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 20.5rem;
+  margin: 0 1rem 1rem 1rem;
+  border-radius: 1.25rem;
+  text-align: center;
+}
+#img1 {
+  width: 100%;
+  border-radius: 1.25rem 1.25rem 0 0;
+  margin-bottom: 1rem;
+}
+.plan-container {
+  background-color: hsl(225, 100%, 98%);
+  color: hsl(223, 47%, 23%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.5rem 0 1.5rem;
+  border-radius: 0.75rem;
+}
+.plan-data {
+  padding: 0.5rem 2rem 0.5rem 1.5rem;
+}
+.plan-data h2 {
+  margin-bottom: 0;
+}
+.plan-data p {
+  margin-top: 0;
+}
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+h2 {
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+.text {
+  padding: 0 2.1rem 0.5rem 2.1rem;
+  line-height: 1.5;
+}
+.button {
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 0.75rem;
+  border: 0;
+  padding: 0.25rem 4rem 0.25rem 4rem;
+  margin: 1.5rem 0 0.5rem 0;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.4rem 1rem hsl(224, 23%, 55%);
+}
+.button:active {
+  background-color: hsl(245, 64%, 65%);
+}
+.button h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.change {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.change:active {
+  color: hsl(245, 64%, 65%);
+}
+.cancel {
+  text-decoration: none;
+}
+.cancel h2 {
+  color: hsl(224, 23%, 55%);
+  padding-bottom: 1rem;
+}
+.cancel h2:active {
+  color: hsl(223, 47%, 23%);
+}
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
