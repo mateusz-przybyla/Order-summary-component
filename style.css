@@ -2,7 +2,7 @@ html {
   font-size: 16px;
 }
 body {
-  background-color: hsl(212, 45%, 89%);
+  background-color: hwb(212 84% 6%);
   font-family: "Red Hat Display";
   display: flex;
   flex-direction: column;
@@ -31,13 +31,13 @@ main {
   margin: 0 1.5rem 0 1.5rem;
   border-radius: 0.75rem;
 }
-.plan-data {
+.plan-details {
   padding: 0.5rem 2rem 0.5rem 1.5rem;
 }
-.plan-data h2 {
+.plan-details h2 {
   margin-bottom: 0;
 }
-.plan-data p {
+.plan-details p {
   margin-top: 0;
 }
 h1 {
@@ -70,7 +70,7 @@ p {
 .button:active {
   background-color: hsl(245, 64%, 65%);
 }
-.button h2 {
+.button p {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
 }
@@ -84,11 +84,12 @@ p {
 .cancel {
   text-decoration: none;
 }
-.cancel h2 {
+.cancel p {
   color: hsl(224, 23%, 55%);
+  font-weight: 700;
   padding-bottom: 1rem;
 }
-.cancel h2:active {
+.cancel p:active {
   color: hsl(223, 47%, 23%);
 }
 footer {
