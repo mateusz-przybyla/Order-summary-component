@@ -12,33 +12,16 @@ body {
 }
 main {
   background-color: hsl(0, 0%, 100%);
-  max-width: 20.5rem;
+  max-width: 28.1rem;
   margin: 0 1rem 1rem 1rem;
   border-radius: 1.25rem;
   text-align: center;
+  align-items: center;
 }
 #img1 {
-  width: 100%;
+  max-width: 100%;
   border-radius: 1.25rem 1.25rem 0 0;
   margin-bottom: 1rem;
-}
-.plan-container {
-  background-color: hsl(225, 100%, 98%);
-  color: hsl(223, 47%, 23%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 1.5rem 0 1.5rem;
-  border-radius: 0.75rem;
-}
-.plan-details {
-  padding: 0.5rem 2rem 0.5rem 1.5rem;
-}
-.plan-details h2 {
-  margin-bottom: 0;
-}
-.plan-details p {
-  margin-top: 0;
 }
 h1 {
   color: hsl(223, 47%, 23%);
@@ -54,48 +37,107 @@ p {
   font-weight: 500;
   color: hsl(224, 23%, 55%);
 }
+.plan-container {
+  background-color: hsl(225, 100%, 98%);
+  color: hsl(223, 47%, 23%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+  margin: 0 1.5rem 0 1.5rem;
+}
+.plan-image {
+  display: flex;
+  padding-left: 1rem;
+}
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.5rem;
+}
+.plan-button {
+  display: flex;
+  padding-right: 1rem;
+}
+.plan-details h2 {
+  margin-bottom: 0;
+}
+.plan-details p {
+  margin-top: 0;
+}
 .text {
   padding: 0 2.1rem 0.5rem 2.1rem;
   line-height: 1.5;
 }
-.button {
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1rem 0;
+}
+.btn-pay {
   background-color: hsl(245, 75%, 52%);
   border-radius: 0.75rem;
   border: 0;
-  padding: 0.25rem 4rem 0.25rem 4rem;
-  margin: 1.5rem 0 0.5rem 0;
+  margin: 1.5rem 1.5rem 0.5rem 1.5rem;
   cursor: pointer;
   box-shadow: 0.1rem 0.4rem 1rem hsl(224, 23%, 55%);
 }
-.button:active {
+.btn-pay:active {
   background-color: hsl(245, 64%, 65%);
 }
-.button p {
+.btn-pay p {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
 }
-.change {
+.btn-change {
   font-size: 0.8rem;
   font-weight: 700;
 }
-.change:active {
+.btn-change:active {
   color: hsl(245, 64%, 65%);
 }
-.cancel {
+.btn-cancel {
   text-decoration: none;
 }
-.cancel p {
+.btn-cancel p {
   color: hsl(224, 23%, 55%);
   font-weight: 700;
-  padding-bottom: 1rem;
 }
-.cancel p:active {
+.btn-cancel p:active {
   color: hsl(223, 47%, 23%);
 }
 footer {
-  font-size: 11px;
+  font-size: 0.7rem;
   text-align: center;
 }
 footer a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 450px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.05rem;
+  }
+  p {
+    font-size: 1.05rem;
+  }
+  .btn-change {
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+  .plan-container {
+    margin: 0 3rem 0 3rem;
+  }
+  .plan-details {
+    padding-right: 3rem;
+  }
+  .btn-pay {
+    margin: 1.5rem 3rem 0.5rem 3rem;
+    box-shadow: 0.1rem 0.6rem 1.5rem hsl(224, 23%, 55%);
+  }
 }
