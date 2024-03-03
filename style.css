@@ -1,6 +1,9 @@
+/* GENERAL STYLES */
+
 html {
   font-size: 16px;
 }
+
 body {
   background-color: hsl(212, 45%, 89%);
   font-family: "Red Hat Display";
@@ -10,19 +13,7 @@ body {
   min-height: 100vh;
   justify-content: center;
 }
-main {
-  background-color: hsl(0, 0%, 100%);
-  max-width: 28.1rem;
-  margin: 0 1rem 1rem 1rem;
-  border-radius: 1.25rem;
-  text-align: center;
-  align-items: center;
-}
-#img1 {
-  max-width: 100%;
-  border-radius: 1.25rem 1.25rem 0 0;
-  margin-bottom: 1rem;
-}
+
 h1 {
   color: hsl(223, 47%, 23%);
   font-size: 1.35rem;
@@ -37,7 +28,32 @@ p {
   font-weight: 500;
   color: hsl(224, 23%, 55%);
 }
-.plan-container {
+
+/* CARD BOX */
+
+.card-box {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 28.1rem;
+  margin: 0 1rem 1rem 1rem;
+  border-radius: 1.25rem;
+  text-align: center;
+  align-items: center;
+}
+
+#img1 {
+  max-width: 100%;
+  border-radius: 1.25rem 1.25rem 0 0;
+  margin-bottom: 1rem;
+}
+
+.text {
+  padding: 0 2.1rem 0.5rem 2.1rem;
+  line-height: 1.5;
+}
+
+/* PLAN DETAILS */
+
+.plan-box {
   background-color: hsl(225, 100%, 98%);
   color: hsl(223, 47%, 23%);
   display: flex;
@@ -46,34 +62,39 @@ p {
   border-radius: 0.75rem;
   margin: 0 1.5rem 0 1.5rem;
 }
+
 .plan-image {
   display: flex;
   padding-left: 1rem;
 }
+
 .plan-details {
   display: flex;
   flex-direction: column;
   padding-right: 1.5rem;
 }
+
 .plan-button {
   display: flex;
   padding-right: 1rem;
 }
+
 .plan-details h2 {
   margin-bottom: 0;
 }
+
 .plan-details p {
   margin-top: 0;
 }
-.text {
-  padding: 0 2.1rem 0.5rem 2.1rem;
-  line-height: 1.5;
-}
+
+/* BUTTONS */
+
 .buttons {
   display: flex;
   flex-direction: column;
   margin: 0 0 1rem 0;
 }
+
 .btn-pay {
   background-color: hsl(245, 75%, 52%);
   border-radius: 0.75rem;
@@ -82,60 +103,76 @@ p {
   cursor: pointer;
   box-shadow: 0.1rem 0.4rem 1rem hsl(224, 23%, 55%);
 }
-.btn-pay:hover {
-  background-color: hsl(245, 64%, 65%);
-}
+
 .btn-pay p {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
 }
+
+.btn-pay:hover {
+  background-color: hsl(245, 64%, 65%);
+}
+
 .btn-change {
   font-size: 0.8rem;
   font-weight: 700;
 }
+
 .btn-change:hover {
   color: hsl(245, 64%, 65%);
 }
+
 .btn-cancel {
   text-decoration: none;
 }
+
 .btn-cancel p {
   color: hsl(224, 23%, 55%);
   font-weight: 700;
 }
+
 .btn-cancel p:hover {
   color: hsl(223, 47%, 23%);
 }
+
+/* FOOTER */
+
 footer {
   font-size: 0.7rem;
   text-align: center;
 }
+
 footer a {
   color: hsl(228, 45%, 44%);
 }
+
+/* MEDIA QUERIES */
 
 @media (min-width: 450px) {
   h1 {
     font-size: 1.6rem;
   }
+
   h2 {
     font-size: 1.05rem;
   }
+
   p {
     font-size: 1.05rem;
   }
-  .btn-change {
-    font-size: 0.9rem;
-  }
-  footer {
-    font-size: 0.8rem;
-  }
-  .plan-container {
+
+  .plan-box {
     margin: 0 3rem 0 3rem;
   }
+
   .plan-details {
     padding-right: 3rem;
   }
+
+  .btn-change {
+    font-size: 0.9rem;
+  }
+
   .btn-pay {
     margin: 1.5rem 3rem 0.5rem 3rem;
     box-shadow: 0.1rem 0.6rem 1.5rem hsl(224, 23%, 55%);
